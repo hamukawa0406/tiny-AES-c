@@ -45,8 +45,17 @@ static PyObject* hello_out(PyObject* self, PyObject* args, PyObject* kw)
 */
 static PyObject* AES128_2Rin(PyObject* self, PyObject* args)
 {
+<<<<<<< HEAD
     int n = 0;
     PyObject* c_list;
+=======
+    const char* adrs = NULL;
+    const char* name = NULL;
+    uint8_t* intput = NULL;
+    uint8_t* key = NULL;
+    uint8_t* output = NULL;
+    static char* argnames[] = {"adrs", "name", NULL};
+>>>>>>> 287e4125de1c688d5554f58b073a4819ec69c7cc
 
     // decide type (list)
     if (!PyArg_ParseTuple(args, "O", &c_list)){
