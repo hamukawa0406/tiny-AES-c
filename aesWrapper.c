@@ -42,6 +42,9 @@ static PyObject* hello_AES128_2Rin(PyObject* self, PyObject* args, PyObject* kw)
 {
     const char* adrs = NULL;
     const char* name = NULL;
+    uint8_t* intput = NULL;
+    uint8_t* key = NULL;
+    uint8_t* output = NULL;
     static char* argnames[] = {"adrs", "name", NULL};
 
     if (!PyArg_ParseTupleAndKeywords(args, kw, "|ss",
